@@ -15,30 +15,18 @@ git clone https://github.com/rampatiganesh/todo-backend.git
 #Initialize TypeScript
 - npx tsc --init
 
-#Setup Prisma + Database
-- Initialize Prisma: npx prisma init
-- In .env file, add your MySQL connection: DATABASE_URL="mysql://root:@localhost:3306/todo_db"
+#Setup Database:
+- Make sure MySQL is running
+- Create a database (example: todo_db)
+- Update .env file: DATABASE_URL="mysql://root:yourpassword@localhost:3306/todo_db"
 
-#In prisma/schema.prisma, define your model:
-datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
-}
+#Prisma Migration: 
+npx prisma migrate dev --name init_task_schema
 
-generator client {
-  provider = "prisma-client-js"
-}
-
-model Task {
-  id        Int      @id @default(autoincrement())
-  title     String
-  color     String
-  completed Boolean  @default(false)
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-}
-#Run migration:
+#Generate Prisma client: 
 npx prisma generate
 
+#Running the Server:
+npm run dev
 
-
+#Server runs at: http://localhost:4000/tasks
