@@ -35,3 +35,7 @@ npm run dev
 
 
 #project done by Vijaya R
+#Output:
+<img width="1911" height="633" alt="Screenshot 2025-08-28 003620" src="https://github.com/user-attachments/assets/151c909e-78ef-4c95-ae32-41e928a0cabf" />
+
+<img width="1284" height="691" alt="Screenshot 2025-08-28 003723" src="https://github.com/user-attachments/assets/b7d0ab10-ec6c-42b8-85b9-51b12de6cd51" />
