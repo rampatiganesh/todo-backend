@@ -29,4 +29,9 @@ npx prisma generate
 #Running the Server:
 npm run dev
 
-#Server runs at: http://localhost:4000/tasks
+#Server runs at: http://localhost:4000/tasks 
+
+<img width="347" height="467" alt="Screenshot 2025-08-27 220139" src="https://github.com/user-attachments/assets/5ac6f558-f196-474a-ad31-dea95e909a67" />
+
+
+#project done by Vijaya R
